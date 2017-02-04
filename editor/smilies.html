@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><!-- saved from url=(0074)http://www.websitetoolbox.com/cgi/members/smilie.cgi?username=test&tool=gb -->
+<HTML><HEAD>
+	<TITLE>Smilies</TITLE>
+	<META http-equiv=Content-Type content="text/html; charset=windows-1254">
+	<STYLE>BODY{FONT-SIZE: 11px; FONT-FAMILY: Verdana}TD{FONT-SIZE: 11px; FONT-FAMILY: Verdana}.clickable {CURSOR: pointer}</STYLE>
+	<META content="MSHTML 6.00.2900.2180" name=GENERATOR>
+</HEAD>
+<BODY text=#000000 vLink=#993300 aLink=#993300 link=#993300 bgColor=#ffffff>
+	<SCRIPT language=javascript type=text/javascript><!--
+	function addsmilie (smilie,url) {
+		var lastSmilie;
+		if (window.opener) {
+			if (window.opener._editor_url) {
+				var smilieCode = '<img src="' + url + '" border=0 align=absmiddle>';
+				window.opener.editor_insertHTML("cmts", smilieCode);
+			}else if (window.opener.htmlEditor){
+				if (url.match(/^\//))url = 'http://www.tekargrup.com' + url;
+				var oSmilie = window.opener.htmlEditor.createElement("img");
+				oSmilie.setAttribute("border", 0);
+				oSmilie.setAttribute("align", "absmiddle");
+				oSmilie.setAttribute("src", url);
+				window.opener.insertNodeAtSelection(oSmilie);
+			} else {
+				var tb = window.opener.document.PostTopic.cmts;
+				try {
+					window.opener.saveSel(tb);
+					window.opener.wrapText(tb, smilie, '', '');
+					window.focus();
+				} catch (e) {
+					tb.value += smilie;
+				}
+			}
+			document.getElementById('divSmilieInserted').style.display = "";
+		}
+	}
+	--></SCRIPT>
+	<CENTER><B>S M I L I E S</B> <BR><BR>Click a row to insert a smilie.<BR><BR>
+	<DIV id=divSmilieInserted style="DISPLAY: none; COLOR: red">The selected smilie has been inserted.<BR><BR></DIV>
+	<TABLE class=clickable cellSpacing=0 cellPadding=0 width="97%" border=0>
+ 		<TBODY><TR><TD bgColor=#dcdcdc>
+      		<TABLE cellSpacing=0 cellPadding=5 width="100%" align=center border=0>
+		        <TBODY><TR style="CURSOR: default" bgColor=#dcdcdc>
+		          <TD width="32%"><B>What To Type</B></TD>
+		          <TD width="32%"><B>Meaning</B></TD>
+		          <TD width="32%"><B>Image Icon</B></TD>
+				</TR>
+		        <TR onClick="addsmilie(':D','editor/popups/images/biggrin.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:D</B></TD>
+          			<TD bgColor=#dcdcdc>Biggrin</TD>
+          			<TD align=middle width=17><IMG src="images/biggrin.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':confused:','editor/popups/images/confused.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:confused:</B></TD>
+          			<TD bgColor=#dcdcdc>Confused</TD>
+          			<TD align=middle width=17><IMG src="images/confused.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':cool:','editor/popups/images/cool.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:cool:</B></TD>
+          			<TD bgColor=#dcdcdc>Cool</TD>
+          			<TD align=middle width=17><IMG src="images/cool.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':(', 'editor/popups/images/frown.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:(</B></TD>
+         			 <TD bgColor=#dcdcdc>Frown</TD>
+          			<TD align=middle width=17><IMG src="images/frown.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':mad:','editor/popups/images/mad.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:mad:</B></TD>
+          			<TD bgColor=#dcdcdc>Mad</TD>
+          			<TD align=middle width=17><IMG src="images/mad.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':o','editor/popups/images/redface.gif')"  bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:o</B></TD>
+          			<TD bgColor=#dcdcdc>Redface</TD>
+          			<TD align=middle width=17><IMG src="images/redface.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':rolleyes:','editor/popups/images/rolleyes.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:rolleyes:</B></TD>
+          			<TD bgColor=#dcdcdc>Rolleyes</TD>
+         			<TD align=middle width=17><IMG src="images/rolleyes.gif"></TD>
+				</TR>
+       		 	<TR onClick="addsmilie(':)','editor/popups/images/smile.gif')" bgColor=#dcdcdc>
+					<TD align=middle width=25><B>:)</B></TD>
+          			<TD bgColor=#dcdcdc>Smile</TD>
+          			<TD align=middle width=17><IMG src="images/smile.gif"></TD>
+				</TR>
+       		 	<TR onClick="addsmilie(':p','editor/popups/images/tongue.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:p</B></TD>
+          			<TD bgColor=#dcdcdc>Tongue</TD>
+          			<TD align=middle width=17><IMG src="images/tongue.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(';)','editor/popups/images/wink.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>;)</B></TD>
+          			<TD bgColor=#dcdcdc>Wink</TD>
+          			<TD align=middle width=17><IMG src="images/wink.gif"></TD>
+				</TR>
+       			<TR onClick="addsmilie(':eek:','editor/popups/images/eek.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:eek:</B></TD>
+          			<TD bgColor=#dcdcdc>Eek</TD>
+          			<TD align=middle width=17><IMG src="images/eek.gif"></TD>
+				</TR>
+       			<TR onClick="addsmilie(':cry:','editor/popups/images/bawl.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:cry:</B></TD>
+          			<TD bgColor=#dcdcdc>Bawl</TD>
+					<TD align=middle width=17><IMG src="images/bawl.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':idea:','editor/popups/images/idea.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:idea:</B></TD>
+          			<TD bgColor=#dcdcdc>Idea</TD>
+          			<TD align=middle width=17><IMG src="images/idea.gif"></TD>
+				</TR>
+       			<TR onClick="addsmilie(':nono:','editor/popups/images/nono.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:nono:</B></TD>
+          			<TD bgColor=#dcdcdc>Nono</TD>
+          			<TD align=middle width=17><IMG src="images/nono.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':lol:','editor/popups/images/rofl.gif')"  bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:lol:</B></TD>
+          			<TD bgColor=#dcdcdc>Rofl</TD>
+          			<TD align=middle width=17><IMG src="images/rofl.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':sleep:','editor/popups/images/sleep.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:sleep:</B></TD>
+          			<TD bgColor=#dcdcdc>Sleep</TD>
+          			<TD align=middle width=17><IMG src="images/sleep.gif"></TD>
+				</TR>
+				<TR onClick="addsmilie(':angel:','editor/popups/images/angel.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:angel:</B></TD>
+          			<TD bgColor=#dcdcdc>Angel</TD>
+          			<TD align=middle width=17><IMG src="images/angel.gif"></TD>
+				</TR>
+       			<TR onClick="addsmilie(':crazy:','editor/popups/images/crazy.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:crazy:</B></TD>
+          			<TD bgColor=#dcdcdc>Crazy</TD>
+          			<TD align=middle width=17><IMG src="images/crazy.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':kiss:','editor/popups/images/kiss.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:kiss:</B></TD>
+          			<TD bgColor=#dcdcdc>Kiss</TD>
+          			<TD align=middle width=17><IMG src="images/kiss.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':love:','editor/popups/images/love.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:love:</B></TD>
+          			<TD bgColor=#dcdcdc>Love</TD>
+          			<TD align=middle width=17><IMG src="images/love.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':tounge:','editor/popups/images/tounge2.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:tounge:</B></TD>
+          			<TD bgColor=#dcdcdc>Tounge2</TD>
+          			<TD align=middle width=17><IMG src="images/tounge2.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':wave:','editor/popups/images/wave.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:wave:</B></TD>
+          			<TD bgColor=#dcdcdc>Wave</TD>
+          			<TD align=middle width=17><IMG src="images/wave.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':thumb:','editor/popups/images/thumb.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:thumb:</B></TD>
+          			<TD bgColor=#dcdcdc>Thumb</TD>
+          			<TD align=middle width=17><IMG src="images/thumb.gif"></TD>
+				</TR>
+        		<TR onClick="addsmilie(':comp:','editor/popups/images/comp.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:comp:</B></TD>
+          			<TD bgColor=#dcdcdc>Comp</TD>
+          			<TD align=middle width=17><IMG src="images/comp.gif"></TD>
+				</TR>
+       			<TR onClick="addsmilie(':sneaky:','editor/popups/images/sneaky.gif')" bgColor=#dcdcdc>
+          			<TD align=middle width=25><B>:sneaky:</B></TD>
+          			<TD bgColor=#dcdcdc>Sneaky</TD>
+          			<TD align=middle width=17><IMG src="images/sneaky.gif"></TD>
+				</TR></TBODY>
+			</TABLE>
+		</TD></TR></TBODY>
+	</TABLE><BR>| <A href="javascript:self.close();">Close</A> | </CENTER>
+</BODY></HTML>
